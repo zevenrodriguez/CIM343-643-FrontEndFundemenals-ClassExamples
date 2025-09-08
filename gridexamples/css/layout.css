@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+}
+
+
+header,
+footer {
+    width: 960px;
+    height: 100px;
+    padding: 20px;
+    border-style: solid;
+}
+
+main {
+    width: 960px;
+    height: auto;
+    padding: 20px;
+    border-style: solid;
+}
+
+.center {
+    /* margin-left: auto; margin-right: auto; */
+    margin: 0 auto;
+    /* 0px top bottom, auto left right */
+}
+
+.grid1 {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 400px 240px 240px;
+    /* adjust for the column gap */
+    column-gap: 20px;
+}
+
+
+
+.grid3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.grid4>div>img {
+    width: 480px;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+
+.grid6 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid6 img {
+    width: 480px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.grid7 {
+    height: 600px;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 250px 250px 250px;
+    /* when adjusting items, you are moving your elements inside an individual column */
+    justify-items: center;
+    /*start=left, center, end=right */
+    align-items: center;
+    /*start=top, center, end=bottom */
+    /* when adjusting content, you are distributing rows and columns in the container */
+    justify-content: space-between;
+    /*start=left, center, end=right, space-around, space-evenly, space-between */
+    align-content: space-between;
+    /*start=top, center, end=bottom, space-around, space-evenly, space-between */
+}
+
+.grid8 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid8box{
+    background-color: blue;
+}
+
+.grid9 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid9box {
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+}
+
