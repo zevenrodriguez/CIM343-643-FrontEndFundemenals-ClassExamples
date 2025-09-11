@@ -1,0 +1,46 @@
+@import "desktop.css";
+body {
+}
+
+h1 {
+  font-size: 50px;
+}
+
+header,
+main,
+footer {
+  width: 350px;
+  padding: 5px;
+}
+
+nav {
+  width: 300px;
+}
+nav > ul {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+
+nav > ul > li {
+  height: 50px;
+  padding-top: 10px;
+}
+
+nav > ul > li > a {
+  font-size: 20px;
+}
+
+.grid1 {
+  display: block;
+}
+
+.grid1 > p{
+    margin-bottom: 10px;
+}
+
+.grid2 {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+}

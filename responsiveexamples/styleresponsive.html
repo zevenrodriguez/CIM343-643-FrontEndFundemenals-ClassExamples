@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive using Style tag</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      @media only screen and (min-width: 600px) {
+        /* min-width set the smallest pixel dimension the css will display at, meaning display css at 600px and above */
+        body {
+          background-color: green;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        /* max-width will display the css when we are less then x number of pixels, less than 400px */
+        body {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Using Style Tags in the Head to Change Background Color Based on Viewport Size
+    </h1>
+  </body>
+</html>
