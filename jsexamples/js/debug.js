@@ -2,7 +2,10 @@
 
 let message = "Print out this message";
 
-console.log(message);
-alert(message);
+console.log(message);// Logs message to the browser console
+alert(message); // Displays an alert dialog with the message
+
+// Updates the inner text of an HTML element with id "heading1" to the message      
 document.querySelector("#heading1").innerText = message;
+// Alternatively, you can use getElementById, which searches the DOM for an element with the specified ID
 document.getElementById("heading1").innerText = message;
