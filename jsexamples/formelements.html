@@ -10,22 +10,26 @@
 
 <body>
     <form>
-        Select your favorite fruit:
+        <label>Enter a message:</label>
+        <input type="text" id="myText" >
+        <br>
+        <label>Enter the number of boxes you want to see:</label>
+        <input type="number" id="myNumber" value="5" min="1" max="10">
+        <br>
+        <label>Select your favorite color:</label>
         <select id="mySelect">
-            <option value="apple">Apple</option>
-            <option value="orange">Orange</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="banana">Banana</option>
+            <option value="orange">orange</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="red">red</option>
         </select>
+        <br>
+        <button type="button" id="myButton">Submit</button>
     </form>
 
-    <p>Click the button to return the value of the selected fruit.</p>
-
-    <button id="dropDownButton">Try it</button>
-
-    <p id="demo"></p>
-
-
+    <div id="output"></div>
+    
+ 
 </body>
 
 </html>
